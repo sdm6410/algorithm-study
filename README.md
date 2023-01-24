@@ -1,7 +1,7 @@
 # algorithm-study
 
-꾸준히 공부하기 위한 Python 알고리즘 스터디입니다.
-매일 문제를 선별해서 Issue로 등록하고 PR로 참여할 수 있습니다.
+Python 알고리즘 스터디입니다.
+매일 문제를 선별하여 공부를 진행중에 있습니다.
 
 ### :laughing: <strong> 참여자
 
