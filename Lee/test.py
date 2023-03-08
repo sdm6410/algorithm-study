@@ -12,5 +12,3 @@ def main(num):
 
 num = 100
 main(num)
-
-print("test")
