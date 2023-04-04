@@ -1,5 +1,6 @@
 from collections import deque
-
+import sys
+input = sys.stdin.readline
 dx = [1,-1,0,0]
 dy = [0,0,1,-1]
 
@@ -13,18 +14,15 @@ def bfs(x, y):
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
-            if(0 <= nx < n and 0 <= ny < m):
+            if(0 <= nx < n and 0 <= ny < m and [nx,ny] and c[nx][ny] == 0):
                 if(space[nx][ny] == 'L' and c[nx][ny] == 0):
+                    q.append([nx, ny])
                     c[nx][ny]= c[x][y] + 1
                     num = max(num, c[nx][ny])
-                    q.append([nx, ny])
-    print(c)
     return num-1
 
 n, m = map(int,input().split())
-space = []
-for _ in range(n):
-    space.append(list(input()))
+space = [list(map(str, input())) for _ in range(n)]
 
 q = deque()
 cnt = 0
