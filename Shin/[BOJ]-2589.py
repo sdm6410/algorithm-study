@@ -14,10 +14,10 @@ def bfs(x, y):
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
-            if(0 <= nx < n and 0 <= ny < m and [nx,ny] and c[nx][ny] == 0):
+            if(0 <= nx < n and 0 <= ny < m):
                 if(space[nx][ny] == 'L' and c[nx][ny] == 0):
                     q.append([nx, ny])
-                    c[nx][ny]= c[x][y] + 1
+                    c[nx][ny] = c[x][y] + 1
                     num = max(num, c[nx][ny])
     return num-1
 
