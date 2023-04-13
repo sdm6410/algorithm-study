@@ -16,6 +16,7 @@ cnt = [[0] * 26]
 S = input()
 for s in S:
     v = cnt[-1].copy()
+    print(v)
     v[ord(s) % 97] += 1
     cnt.append(v)
 for _ in range(int(input())):
